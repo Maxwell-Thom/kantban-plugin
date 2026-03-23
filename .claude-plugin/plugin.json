@@ -1,9 +1,0 @@
-{
-  "name": "kantban",
-  "description": "KantBan AI co-pilot — turns your kanban board into Claude's external memory.",
-  "version": "0.1.4",
-  "author": { "name": "KantBan", "email": "hello@kantban.com" },
-  "repository": "https://github.com/kantban/kantban-plugin",
-  "license": "UNLICENSED",
-  "keywords": ["kanban", "project-management", "mcp", "planning", "productivity"]
-}

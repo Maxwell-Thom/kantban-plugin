@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "kantban-plugin",
+  "version": "0.1.4",
+  "description": "KantBan Claude Code plugin — turns your kanban board into Claude's external memory",
+  "owner": {
+    "name": "KantBan",
+    "email": "hello@kantban.com"
+  },
+  "plugins": [
+    {
+      "name": "kantban",
+      "description": "KantBan AI co-pilot — 96 MCP tools, slash commands, board-analyst agent, session hooks, and kantban-assistant skill",
+      "version": "0.1.4",
+      "author": {
+        "name": "KantBan",
+        "email": "hello@kantban.com"
+      },
+      "source": "./plugins/kantban",
+      "category": "productivity"
+    }
+  ]
+}
