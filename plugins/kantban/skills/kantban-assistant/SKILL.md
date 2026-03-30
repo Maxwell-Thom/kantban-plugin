@@ -272,6 +272,12 @@ All tools are prefixed with `kantban:` when scoped to this MCP server.
 **Pipeline Templates**
 `kantban_list_pipeline_templates`, `kantban_get_pipeline_template`, `kantban_create_pipeline_template`, `kantban_update_pipeline_template`, `kantban_delete_pipeline_template`, `kantban_run_pipeline_template`, `kantban_add_template_step`, `kantban_update_template_step`, `kantban_remove_template_step`, `kantban_reorder_template_steps`
 
+**Pipeline Observability**
+`kantban_get_loop_checkpoint`, `kantban_get_debt_items`, `kantban_classify_trajectory`, `kantban_clear_loop_checkpoint`, `kantban_invoke_advisor`
+
+**Pipeline Tool Restrictions**
+`kantban_set_tool_restrictions`, `kantban_get_tool_restrictions`
+
 **5 Resources:** `kanban://my/dashboard`, `kanban://project/{projectId}/board/{boardId}/snapshot`, `kanban://project/{projectId}/my-next-tasks`, `kanban://project/{projectId}/health`, `kanban://project/{projectId}/recent-activity`
 
 **6 Prompts:** `plan-feature`, `daily-standup`, `groom-backlog`, `link-github`, `sprint-forecast`, `run-pipeline-template`
@@ -290,7 +296,7 @@ Detailed guidance lives in the reference files:
 | [reference/github-integration.md](reference/github-integration.md) | Branch detection, PR linking, sync mechanism |
 | [reference/pipeline-templates.md](reference/pipeline-templates.md) | Built-in and user-defined pipeline templates, how to run them |
 | [reference/firing-constraints.md](reference/firing-constraints.md) | Pre-fire gates on pipeline columns — subject types, operators, patterns, and MCP tools |
-| [reference/pipeline-cli.md](reference/pipeline-cli.md) | CLI orchestrator — installation (`kantban-cli` on npm), pipeline command, flags, constraint enforcement, lifecycle |
+| [reference/pipeline-cli.md](reference/pipeline-cli.md) | CLI orchestrator — installation, pipeline command, flags, constraint enforcement, lifecycle, gate system, three-loop architecture, evaluator columns, advisor, replanner |
 | [reference/configuration.md](reference/configuration.md) | CLAUDE.md override knobs and environment variables |
 
 ---
